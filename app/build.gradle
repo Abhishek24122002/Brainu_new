@@ -11,6 +11,9 @@ android {
         versionName "10.1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    task wrapper(type: Wrapper){
+        gradleVersion = '7.2'
+    }
     lintOptions {
         checkReleaseBuilds false
         // Or, if you prefer, you can continue to check for errors in release builds,
